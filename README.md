@@ -4,7 +4,7 @@ Change History
 
 -->
 
-# Conduit Middleware Boilerplate Template Project
+# Boilerplate Template Project
 
 `👨🏻‍💻 Development ready template.`
 
