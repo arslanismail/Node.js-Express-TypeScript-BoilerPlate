@@ -1,0 +1,59 @@
+{
+  "name": "mw.bp.node.api",
+  "version": "1.0.0",
+  "description": "J2 Middleware Boilerplate Repository for API project.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "build:docker": "node_modules/.bin/tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec ts-node src/server.ts --watch src",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000 --detectOpenHandles",
+    "test:watch": "cross-env NODE_ENV=test jest --watch",
+    "test:coverage": "jest --coverage",
+    "audit": "npm audit",
+    "audit:fix": "npm audit fix --only=prod"
+  },
+  "engineStrict": false,
+  "engines": {
+    "node": ">12.14.0 <13",
+    "npm": "~6.13.4"
+  },
+  "keywords": [
+    "node",
+    "es6",
+    "express",
+    "mssql",
+    "oracle",
+    "docker",
+    "microservice"
+  ],
+  "author": {
+    "name": "Arslan Ismail",
+    "email": "arslanismail840@gmail.com"
+  },
+  "contributors": [],
+  "devDependencies": {
+    "@types/express": "^4.17.4",
+    "@types/jest": "^25.1.4",
+    "@types/node": "^14.0.1",
+    "@types/supertest": "^2.0.8",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "cross-env": "^7.0.2",
+    "jest": "^25.2.4",
+    "nodemon": "^2.0.2",
+    "prettier": "2.0.2",
+    "rimraf": "^3.0.2",
+    "supertest": "^4.0.2",
+    "ts-jest": "^25.3.0",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "winston": "^3.2.1"
+  },
+  "license": "ISC"
+}
