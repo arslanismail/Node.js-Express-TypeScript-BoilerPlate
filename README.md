@@ -1,5 +1,5 @@
 <!--
-Author: Arslan Ismail [FN] (arslanismail840@gmail.com)
+Author: Arslan Ismail [AI] (arslanismail840@gmail.com)
 Change History
 
 -->
@@ -16,7 +16,7 @@ Following tools and libraries are included with basic configuration:
 
 | Node JS | Yarn   |
 | ------- | ------ |
-| v12.16  | latest |
+| v16.3.0  | latest |
 
 > `Production Dependecies`
 >

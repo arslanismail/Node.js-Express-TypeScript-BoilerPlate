@@ -1,25 +1,25 @@
 version: "3.7"
 services:
   jazeel:
-    container_name: jazeel_bp_api
+    container_name: grana
     # image: j2_middleware:$CDT_IMAGE_VERSION
-    image: jazeel_bp_api:1.0
+    image: grana:1.0
     restart: unless-stopped
     build:
       context: .
       dockerfile: ./docker/Dockerfile
       labels:
-        com.jazeel.maintainer: "Aion Digital"
+        com.vf.maintainer: "Virtual Force"
         # com.jazeel.version: $CDT_IMAGE_VERSION
-        com.jazeel.description: "Container for J2 application Middleware."
+        com.vf.description: "Container for boiler plate"
     command: npm run start
     networks:
-      - jazeel
+      - grana
     environment:
       - PORT=3000
       - NODE_ENV=production
     ports:
       - "3000:3000"
 networks:
-  jazeel:
-    name: jazeel
+  grana:
+    name: grana

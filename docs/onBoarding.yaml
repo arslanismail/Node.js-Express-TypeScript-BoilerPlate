@@ -1,0 +1,16 @@
+paths:
+  /grana/api/v1/*:
+    get:
+      tags:
+        - GRANA
+      summary: Grana Backend
+      description: The Purpose of this server is to develop backend services for Granna "
+      responses:
+        '200':
+          description:
+          content:
+            application/json:
+              schema:
+                $ref: ''
+        '500':
+          $ref: '#/definitions/Error'

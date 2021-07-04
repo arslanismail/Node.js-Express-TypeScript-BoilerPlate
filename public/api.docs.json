@@ -1,0 +1,80 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "mw.node.wrapper",
+    "version": "1.0.0",
+    "description": "Backend Middleware",
+    "x-logo": {
+      "url": "grana-log.png",
+      "altText": "mw.node.wrapper"
+    },
+    "contact": {
+      "name": "VF SUPPORT",
+      "url": "https://virtualforce.io/",
+      "email": "arslan.ismail@virtualforce.io"
+    },
+    "host": "http://localhost:3010",
+    "basePath": "/api/v1"
+  },
+  "securityDefinitions": {
+    "Authorization": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization"
+    }
+  },
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "components": {},
+  "paths": {
+    "/grana/api/v1/*": {
+      "get": {
+        "tags": [
+          "GRANA"
+        ],
+        "summary": "Grana Backend",
+        "description": "The Purpose of this server is to develop backend services for Granna \"",
+        "responses": {
+          "200": {
+            "description": null,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": ""
+                }
+              }
+            }
+          },
+          "500": {
+            "$ref": "#/definitions/Error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "responseMeta": {
+      "type": "object",
+      "properties": {
+        "x-request-or-lang": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "response-time": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "tags": []
+}
